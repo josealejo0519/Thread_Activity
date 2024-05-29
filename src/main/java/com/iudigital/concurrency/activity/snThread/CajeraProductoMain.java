@@ -16,9 +16,9 @@ public class CajeraProductoMain {
         ClienteProducto cliente3 = new ClienteProducto("Aquaman ", productos);
 
         long initialTime = System.currentTimeMillis();
-        CajeraProducto cajera1 = new CajeraProducto("Elizabeth");
-        CajeraProducto cajera2 = new CajeraProducto("Sofia");
-        CajeraProducto cajera3 = new CajeraProducto("Paulina");
+        CajeraProducto cajera1 = new CajeraProducto("Elizabeth: ");
+        CajeraProducto cajera2 = new CajeraProducto("Sofia: ");
+        CajeraProducto cajera3 = new CajeraProducto("Paulina: ");
 
         cajera1.procesarCompra(cliente2, initialTime);
         cajera2.procesarCompra(cliente3, initialTime);
@@ -26,7 +26,7 @@ public class CajeraProductoMain {
     }
 
     public static void setProductos(List<Producto> productos) {
-        Producto producto1 = new Producto("Zapatos", 500, 5);
+        Producto producto1 = new Producto("Zapatos ", 500 , 5);
         Producto producto2 = new Producto("BlueJeans", 300, 15);
         Producto producto3 = new Producto("Camisas", 700, 12);
 
