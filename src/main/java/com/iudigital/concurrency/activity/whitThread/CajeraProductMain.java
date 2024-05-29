@@ -28,7 +28,7 @@ public class CajeraProductMain {
     }
 
     /**
-     * @param productos 
+     * @param productos
      */
     public static void setProductos(List<Producto> productos) {
         Producto producto1 = new Producto("Zapatos", 500, 5);
