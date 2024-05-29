@@ -8,6 +8,11 @@ public class CajeraProduct implements Runnable {
     private ClienteProducto cliente;
     private long initialTime;
 
+    /**
+     * @param nombreCajera
+     * @param cliente
+     * @param initialTime
+     */
     public CajeraProduct(String nombreCajera, ClienteProducto cliente, long initialTime) {
         this.nombreCajera = nombreCajera;
         this.cliente = cliente;
@@ -19,6 +24,10 @@ public class CajeraProduct implements Runnable {
         procesarCompra(cliente, initialTime);
     }
 
+    /**
+     * @param cliente
+     * @param timeStamp
+     */
     public void procesarCompra(ClienteProducto cliente, long timeStamp) {
         System.out.println(this.nombreCajera + ": Procesando compra para: " + cliente.getNombre()
                 + " en el tiempo: " + (System.currentTimeMillis() - timeStamp) /1000.0+ " seg");
@@ -48,6 +57,9 @@ public class CajeraProduct implements Runnable {
 
     }
 
+    /**
+     * tiempo de espera
+     */
     private void esperarxSegundos() {
         try {
             Thread.sleep(1000);
