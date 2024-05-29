@@ -29,7 +29,7 @@ public class CajeraProduct implements Runnable {
      * @param timeStamp
      */
     public void procesarCompra(ClienteProducto cliente, long timeStamp) {
-        System.out.println(this.nombreCajera + ": Procesando compra para: " + cliente.getNombre()
+        System.out.println("Bienvenido!\n Soy la cajera " + this.nombreCajera + ": Estoy procesando su compra, Sr. : " + cliente.getNombre()
                 + " en el tiempo: " + (System.currentTimeMillis() - timeStamp) /1000.0+ " seg");
         int conCliente = 1;
         for (Producto p : cliente.getProductos()) {
