@@ -17,13 +17,13 @@ public class CajeraProductMain {
 
         long initialTime = System.currentTimeMillis();
 
-        CajeraProduct cajera1 = new CajeraProduct("Elizabeth", cliente1, initialTime);
-        CajeraProduct cajera2 = new CajeraProduct("Paulina", cliente2, initialTime);
-        CajeraProduct cajera3 = new CajeraProduct("Fabiola", cliente3, initialTime);
+        Thread cajera1 = new Thread(new CajeraProduct("Elizabeth", cliente1, initialTime));
+        Thread cajera2 = new Thread(new CajeraProduct("Paulina", cliente2, initialTime));
+        Thread cajera3 = new Thread(new CajeraProduct("Fabiola", cliente3, initialTime));
 
-        cajera1.run();
-        cajera2.run();
-        cajera3.run();
+        cajera1.start();
+        cajera2.start();
+        cajera3.start();
 
     }
 
