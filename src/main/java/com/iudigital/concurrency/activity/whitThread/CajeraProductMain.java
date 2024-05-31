@@ -21,9 +21,9 @@ public class CajeraProductMain {
         CajeraProduct cajera2 = new CajeraProduct("Paulina", cliente2, initialTime);
         CajeraProduct cajera3 = new CajeraProduct("Fabiola", cliente3, initialTime);
 
-        cajera1.procesarCompra(cliente1, initialTime);
-        cajera2.procesarCompra(cliente1, initialTime);
-        cajera3.procesarCompra(cliente1, initialTime);
+        cajera1.run();
+        cajera2.run();
+        cajera3.run();
 
     }
 
